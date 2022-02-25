@@ -17,7 +17,8 @@
     margin-left: 20px;
 }
 .container{
-    max-width: 1440px;
+    max-width: 100%;
+    width: 100%;
 }
 .justify-content-center{
     justify-content: center;
@@ -55,7 +56,9 @@
     background-color: lightgray;
 }
 .width80{
+    box-sizing: border-box;
     width: 80%;
+    height: max-content;
 }
 .border-radius{
     border-top-left-radius: 4px;
