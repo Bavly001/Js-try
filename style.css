@@ -59,7 +59,7 @@
 .width80{
     box-sizing: border-box;
     width: 90%;
-    height: auto;
+    height: 50%;
     margin: auto;
 }
 .border-radius{
