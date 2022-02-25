@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>JS Try</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container flex column justify-content-center align-items-center">
+        <div class="shadow width80 align-items-center justify-content-center mt-20">
+            <div class="p10 border-radius bg-gray text-center">
+                <h1>
+                    Book a Book
+                </h1>
+                <h2 class="font-light">
+                    It's our new library
+                </h2>
+                <input class="search" type="text" placeholder="Search books...">
+            </div>
+            <div>
+                <h2 class="ml-20">
+                    Books to Read
+                </h2>
+                <ul  id="book-list" class="list">
+                    <li class="align-items-center">Name of the Wind
+                        <button class="delete">delete</button>
+                    </li>
+                    <li class="align-items-center">No one cares
+                        <button class="delete">delete</button>
+                    </li>
+                    <li class="align-items-center">Name of the Ice
+                        <button class="delete">delete</button>
+                    </li>
+                </ul>
+                <form  id="add-book" class="flex justify-content-center">
+                    <input class="add" type="text" placeholder="Add a Book...">
+                    <button class="add-btn">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
