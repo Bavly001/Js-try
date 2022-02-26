@@ -7,8 +7,24 @@ list.addEventListener('click', function(e){
     }
 })
 
-// var add_btn = document.querySelector('#add-book .add-btn');
+// add book list
+const addForm = document.forms['add-book'];
 
-// add_btn.addEventListener('click', function(e){
+addForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    
+    const value = addForm.querySelector('input[type="text"]').value;
+    
+    //create element
+    const li = document.createElement('li');
+    const delBtn = document.createElement('button');
 
-// })
+    //add content
+    delBtn.textContent='delete';
+    delBtn.className = 'delete'
+    li.textContent=value;
+
+    //append to document
+    li.appendChild(delBtn);
+    list.appendChild(li);
+})
