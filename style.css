@@ -44,6 +44,7 @@
 }
 .list {
     list-style: none;
+    margin: 10px;
 }
 .list li{
     padding: 20px;
@@ -108,4 +109,12 @@
 }
 .add-btn:hover ,.delete:hover{
     background-color: rgb(0, 69, 69);
+}
+
+#add-book #hide{
+    width: 30px;
+}
+
+#add-book label{
+    line-height: 50px;
 }

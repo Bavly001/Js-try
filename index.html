@@ -30,9 +30,15 @@
                         <button class="delete">delete</button>
                     </li>
                 </ul>
-                <form  id="add-book" class="flex justify-content-center">
-                    <input class="add" type="text" placeholder="Add a Book...">
-                    <button class="add-btn">Add</button>
+                <form  id="add-book" class="flex column justify-content-center">
+                    <div class="flex justify-content-center align-items-center">
+                        <input type="checkbox" id="hide">
+                        <label for="hide">Hide all books...</label>
+                    </div>
+                    <div class="flex justify-content-center">
+                        <input class="add" type="text" placeholder="Add a Book...">
+                        <button class="add-btn">Add</button>    
+                    </div>
                 </form>
             </div>
         </div>
