@@ -23,9 +23,11 @@ addForm.addEventListener('submit', function(e){
         addForm.innerHTML += '<p id="error">Please, Add your book name</p>'
     }
     else{
-        text_box.style.outline="none";
         const text_err = addForm.querySelector('#error');
-        text_err.style.display = "none";
+        if(text_err){
+            text_box.style.outline="none";
+            addForm.removeChild(text_err);
+        }
         //create element
         const li = document.createElement('li');
         const delBtn = document.createElement('button');
