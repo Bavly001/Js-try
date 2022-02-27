@@ -118,3 +118,10 @@
 #add-book label{
     line-height: 50px;
 }
+
+#error{
+    color: red;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+}
