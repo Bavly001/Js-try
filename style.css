@@ -120,8 +120,8 @@
 }
 
 #error{
+    display:none;
     color: red;
     font-size: smaller;
-    display: flex;
     justify-content: center;
 }

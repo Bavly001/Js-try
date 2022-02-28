@@ -15,18 +15,18 @@ addForm.addEventListener('submit', function(e){
     
     const text_box=addForm.querySelector('input[type="text"]');
     const value = addForm.querySelector('input[type="text"]').value;
+    const text_err = addForm.querySelector('#error');
     addForm.querySelector('input[type="text"]').value='';
 
     //empty value
     if (value == ''){
         text_box.style.outline="1px solid red"
-        addForm.innerHTML += '<p id="error">Please, Add your book name</p>'
+        text_err.style.display="block"
     }
     else{
-        const text_err = addForm.querySelector('#error');
-        if(text_err){
+        if(text_err.style.display="block"){
             text_box.style.outline="none";
-            addForm.removeChild(text_err);
+            text_err.style.display="none";
         }
         //create element
         const li = document.createElement('li');
@@ -52,4 +52,18 @@ hideBox.addEventListener('change',function(e){
     else{
         list.style.display = "block";
     }
+})
+
+const searchBar = document.querySelector('#search-books input');
+searchBar.addEventListener('keyup',function(e){
+    const term = e.target.value.toLowerCase();
+    list.querySelectorAll('li').forEach(function(book){
+        const title = book.textContent;
+        if(title.toLowerCase().indexOf(term) != -1){
+            book.style.display = "block";
+        }
+        else{
+            book.style.display = "none";
+        }
+    })
 })
