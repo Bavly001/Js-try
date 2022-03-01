@@ -123,5 +123,30 @@
     display:none;
     color: red;
     font-size: smaller;
-    justify-content: center;
+}
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#tabbed-content li:hover{
+    background:darkcyan;
+    color: white
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    width: 90%;
+    margin:0 auto;
+}
+
+#tabbed-content .panel.active{
+    display: block;
 }

@@ -39,10 +39,22 @@
                         <input class="add" type="text" placeholder="Add a Book...">
                         <button class="add-btn">Add</button> 
                     </div>
-                    <div class="flex justify-content-center">
-                        <p id="error">Please, Add your book name</p>
-                    </div>
+                        <p class="text-center" id="error">Please, Add your book name</p>
                 </form>
+                <div id="tabbed-content">
+                    <ul class="tabs">
+                        <li data-target="#about" class="active">About</li>
+                        <li data-target="#contact">Contact</li>
+                    </ul>
+                    <div class="panel active" id="about">
+                        <p>Content for about tab</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nisi veniam consectetur quia eaque tempore, ex, rerum numquam aut repudiandae ea. Excepturi ab ipsa nobis nam ullam vel facere quidem!</p>
+                    </div>
+                    <div class="panel" id="contact">
+                        <p>Content for contact tab</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta? Natus veritatis numquam excepturi laboriosam ratione. Unde doloremque eos quaerat ea possimus quis corrupti cupiditate dignissimos. Eaque magni aut quos.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
